@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<a style="font-size:60px;" href="https://www.encodedna.com/jquery/ui-datepicker-widget-change-date-format.htm">Code Link</a>
+
+
+    <div>
+        Date: <input type="text" id="tbDate" />
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('input[id$=tbDate]').datepicker({});
+    });
+	
+	$('input[id$=tbDate]').datepicker({
+    dateFormat: 'dd-mm-yy'
+});
+</script>
+</html>
